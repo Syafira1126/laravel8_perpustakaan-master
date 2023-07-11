@@ -175,7 +175,9 @@ class Buku extends Component
             $buku = ModelsBuku::latest()->paginate(5);
         }
         
-        return view('livewire.petugas.buku', compact('buku'));
+        return view('livewire.petugas.buku', [
+            'buku' => $buku
+        ]);
     }
 
     public function format()

@@ -41,7 +41,7 @@ class Buku extends Component
         $this->buku_id = $id;
     }
 
-    public function keranjang(ModelsBuku )
+    public function keranjang()
     {
         // user harus login
         if (auth()->user()) {
